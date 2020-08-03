@@ -1,0 +1,16 @@
+var_ = input()
+try:
+    val = int(var_)
+    print("This input is of type Integer.", end="")
+except ValueError:
+    try:
+        val = float(var_)
+        print("This input is of type Float.", end = "")
+    except ValueError:
+        try:
+            val = str(var_)
+            print("This input is of type string.", end = "")
+        except ValueError:
+            print("This is something else.", end="")
+
+        
