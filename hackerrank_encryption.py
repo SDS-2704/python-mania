@@ -1,4 +1,5 @@
 #MAINCODE
+#https://www.hackerrank.com/challenges/encryption/problem
 import math
 import numpy as np
 import itertools
