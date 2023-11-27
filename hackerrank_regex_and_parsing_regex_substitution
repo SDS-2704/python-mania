@@ -1,0 +1,21 @@
+#https://www.hackerrank.com/challenges/re-sub-regex-substitution/problem?isFullScreen=true
+import re
+N = int(input())
+str_output = ''
+for _ in range(N):
+    str_ = input()
+    if _ != N-1:
+        if (" && " in str_):
+            str_output += re.sub("(?<=\s)&&(?=\s)", "and", str_) + "\n"
+        elif (" || " in str_):
+            str_output += re.sub(r"(?<=\s)\|\|(?=\s)", "or", str_) + "\n"
+        else:
+            str_output += str_ + "\n"
+    elif _ == N-1:
+        if (" && " in str_):
+            str_output += re.sub("(?<=\s)&&(?=\s)", "and", str_)
+        elif (" || " in str_):
+            str_output += re.sub(r"(?<=\s)\|\|(?=\s)", "or", str_)
+        else:
+            str_output += str_
+print(str_output)
