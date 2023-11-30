@@ -1,0 +1,9 @@
+import numpy as np
+N, M = input().split()
+array_2d = [list(map(int,input().split())) for x in range (2)]
+ans_axis1 = np.min(array_2d, axis=1)
+ans_max = np.max(ans_axis1)
+print(ans_max)    
+
+
+
