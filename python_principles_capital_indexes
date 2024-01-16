@@ -1,0 +1,12 @@
+#my solution
+def capital_indexes(str_):
+    list_ = []
+    for _ in range(len(str_)):
+        if str_[_].isupper() == True:
+            list_.append(_)
+    return list_
+
+#shorter version
+from string import uppercase
+def capital_indexes(s):
+    return [i for i in range(len(s)) if s[i] in uppercase]
