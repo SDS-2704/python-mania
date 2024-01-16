@@ -6,3 +6,7 @@ def online_count(dict_):
         else:
             continue
     return cnt_
+
+# short version
+def online_count(people):
+    return len([p for p in people if people[p] == "online"])
