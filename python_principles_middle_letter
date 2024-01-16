@@ -1,0 +1,3 @@
+import math
+def mid(str_):
+    return str_[math.floor(len(str_)/2)] if len(str_) % 2 != 0 else ''
