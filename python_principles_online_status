@@ -1,0 +1,8 @@
+def online_count(dict_):
+    cnt_ = 0
+    for _ in dict_:
+        if dict_[_] == "online":
+            cnt_ += 1
+        else:
+            continue
+    return cnt_
