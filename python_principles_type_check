@@ -1,0 +1,2 @@
+def only_ints(param1, param2):
+    return all(type(param) == int for param in (param1, param2))
