@@ -1,0 +1,5 @@
+def add_dots(str_):
+    return '.'.join(str_)
+def remove_dots(str_):
+    return str_.replace(".","")
+    
