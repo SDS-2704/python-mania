@@ -1,0 +1,2 @@
+def count(str_):
+    return len(str_.split('-'))
