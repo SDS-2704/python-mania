@@ -1,0 +1,3 @@
+def is_anagram(str_1, str_2):
+    return sorted([x for x in str_1]) == sorted([y for y in str_2])
+    
