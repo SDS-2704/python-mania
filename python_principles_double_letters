@@ -1,0 +1,9 @@
+def double_letters(str_):
+    for _ in range(len(str_)-1):
+        if str_[_] == str_[_+1]:
+            return True
+    return False
+
+#shorter solution
+def double_letters(string):
+    return any([a == b for a, b in zip(string, string[1:])])
