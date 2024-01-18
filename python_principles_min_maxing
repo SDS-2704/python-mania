@@ -1,0 +1,3 @@
+
+def largest_difference(lst_):
+    return max(lst_) - min(lst_)
