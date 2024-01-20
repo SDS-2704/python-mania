@@ -1,0 +1,2 @@
+def palindrome(str_):
+    return (str_ == str_[::-1])
