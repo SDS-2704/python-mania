@@ -1,0 +1,4 @@
+import numpy as np
+space_ints = list(map(int, input().split()))
+print(np.zeros(space_ints, dtype=int))
+print(np.ones(space_ints, dtype=int))
