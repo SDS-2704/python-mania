@@ -1,0 +1,11 @@
+import numpy
+N, M = map(int, input().split(" "))
+lst_N = []
+for _ in range(N):
+    lst_M = list(map(int, input().split(" ")))
+    lst_N.append(lst_M)
+my_array = numpy.array(lst_N)
+sum_array = numpy.sum(my_array, axis=0)
+prod_array = numpy.prod(sum_array)
+print(prod_array)    
+
