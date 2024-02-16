@@ -1,0 +1,10 @@
+import sys
+def sum_of_multiples(n, k):
+    p = (n - 1) // k
+    return k * (p * (p + 1)) // 2
+
+t = int(input().strip())
+for _ in range(t):
+    n = int(input().strip())
+    sum_ = sum_of_multiples(n, 3) + sum_of_multiples(n, 5) - sum_of_multiples(n, 15)
+    print(sum_)
