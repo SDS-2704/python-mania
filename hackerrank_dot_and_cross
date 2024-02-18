@@ -1,0 +1,5 @@
+import numpy
+N = int(input())
+arr_A = [list(map(int, input().split(" "))) for i in range(N)]
+arr_B = [list(map(int, input().split(" "))) for j in range(N)]
+print(numpy.dot(arr_A, arr_B))
